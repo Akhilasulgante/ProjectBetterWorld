@@ -12,7 +12,6 @@ const Storydisplay = ({ story }) => {
   return (
     <div>
       <div>
-        <lable>Displaying?</lable>
         <Storyfeed story={story}></Storyfeed>
       </div>
     </div>

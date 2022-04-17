@@ -11,18 +11,22 @@ import "../Styling/Stories.css";
 const storyfeed = ({ story }) => {
   return (
     <div>
-      <ul>
+      <div>
         {story.map((story, i) => (
-          <li key={"story" + i}>
-            <label className="name" name="Fname">
+          <div key={"story" + i}>
+            <label className="Fname" name="Fname">
               Angel Name:{story.name}{" "}
             </label>
-            <label>Helping story:</label>
-            {story.stor}
-            {""}
-          </li>
+            <div>
+              <label>
+                Helping story:
+                {story.stor}
+                {""}
+              </label>
+            </div>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

@@ -57,8 +57,8 @@ const StoryForm = ({ story, onCreateStory }) => {
           </label>
         </div>
 
-        <div>
-          <button type="submit" className="btnstory" name="strybtn">
+        <div className="btnstory">
+          <button type="submit" id="strybtn">
             Share
           </button>
         </div>
