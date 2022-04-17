@@ -2,6 +2,9 @@ import React from "react";
 import "./NavBar.css";
 import Logo from "../Assets/Logo.jpg";
 
+/**
+ * This component displays the Navigation bar of the site
+ */
 export default function NavBar() {
   return (
     <nav>
