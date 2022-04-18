@@ -7,16 +7,19 @@
   flex: 50%;
   display: flex;
   align-items: left;
+  width: 1200px;
 }
 
 .amtdonated {
   flex: 50%;
-  border: black;
+  border: 0.2rem solid;
   align-items: right;
-
-  padding-right: 20px;
-  background-color: cadetblue;
+  width: 400px;
+  font-weight: bold;
 }
 
-.donatebox {
+.tyimage {
+  margin-top: 50px;
+  width: 800px;
+  height: 300px;
 }

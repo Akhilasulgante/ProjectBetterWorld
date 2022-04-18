@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import causeData from "../Data/causeData";
-
-// causeData[btnId].donationAm
+import "../Styling/CauseSelect.css";
 
 /**
  * This component displays the total amount that has been donated to a particular cause
@@ -12,7 +11,7 @@ function Amtdonated({ amount, btnId }) {
   return (
     <div>
       <div className="amtdonated">
-        <label>Amount donated</label>
+        <label>Amount donated: </label>
         <label>{amount}</label>
       </div>
     </div>

@@ -31,7 +31,7 @@ const StoryForm = ({ story, onCreateStory }) => {
       <form onSubmit={onCreateStoryHandler}>
         <div>
           <label className="name">
-            Name:{" "}
+            Your Name:{" "}
             <input
               type="text"
               name="name"
@@ -47,6 +47,7 @@ const StoryForm = ({ story, onCreateStory }) => {
           <label>
             Your Story:{" "}
             <input
+              className="stext"
               type="text"
               name="stor"
               value={stor}

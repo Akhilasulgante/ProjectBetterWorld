@@ -1,5 +1,18 @@
 .image {
   position: relative;
-  width: 1440px;
-  height: 400px;
+  width: 1400px;
+  height: 350px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.HomeBtn {
+  background-color: transparent;
+  border: none;
+}
+
+.thead {
+  align-items: center;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }

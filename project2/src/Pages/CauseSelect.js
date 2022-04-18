@@ -29,11 +29,19 @@ function CauseSelect(props) {
         <p>
           {causeData[btnId].Desc1} <br /> {causeData[btnId].Desc2}
         </p>
-        <Amtdonated amount={Amount} btnId={btnId}></Amtdonated>
+        <Amtdonated
+          className="amtdonated"
+          amount={Amount}
+          btnId={btnId}
+        ></Amtdonated>
       </div>
       <DonatedAmount btnId={btnId} setAmount={setAmount}></DonatedAmount>
       <div>
-        <img src={causeData[btnId].img} alt="Not loading" />
+        <img
+          className="tyimage"
+          src="https://morethankyounotes.com/wp-content/uploads/2016/07/Donation-Thanks-1.png"
+          alt="Not loading"
+        />
       </div>
     </div>
   );

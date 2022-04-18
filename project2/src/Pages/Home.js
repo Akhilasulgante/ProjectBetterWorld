@@ -1,6 +1,9 @@
 import React from "react";
 import "../Styling/Home.css";
 import { useNavigate } from "react-router-dom";
+import Sanitation from "../Assets/Sanitation.jpg";
+import Golbalwarming from "../Assets/Golbalwarming.jpg";
+import Hunger from "../Assets/Hunger.jpg";
 
 /**
  * This component displays content of the homepage, it consists images as buttons and when users click on the image, that cause is rendered
@@ -14,11 +17,17 @@ export default function Home(props) {
 
   return (
     <div>
-      <button>
+      <h1 className="thead">
+        We make a living by what we get. We make a life by what we Give.
+      </h1>
+      <h4 className="thead">
+        Select a cause you want to support by clicking below images
+      </h4>
+      <button className="HomeBtn">
         <img
           className="image"
           id="1"
-          src="https://themefisher.com/wp-content/uploads/edd/2019/09/wishfund-charity-theme.jpg"
+          src={Hunger}
           alt="not loading?"
           onClick={() => {
             setBtnId("0");
@@ -26,11 +35,11 @@ export default function Home(props) {
           }}
         />
       </button>
-      <button>
+      <button className="HomeBtn">
         <img
           className="image"
           id="2"
-          src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/568595379bdecc1abb8de646418f0f2a/f17398f1224e98482e5b6bfd_rw_1920.jpg?h=c58f5076359ffc9433be9b401a2829ca"
+          src={Golbalwarming}
           alt="not loading?"
           onClick={() => {
             setBtnId("1");
@@ -38,11 +47,11 @@ export default function Home(props) {
           }}
         />
       </button>
-      <button>
+      <button className="HomeBtn">
         <img
           className="image"
           id="3"
-          src="https://pro2-bar-s3-cdn-cf4.myportfolio.com/568595379bdecc1abb8de646418f0f2a/f17398f1224e98482e5b6bfd_rw_1920.jpg?h=c58f5076359ffc9433be9b401a2829ca"
+          src={Sanitation}
           alt="not loading?"
           onClick={() => {
             setBtnId("2");

@@ -1,6 +1,5 @@
 .name {
   margin-top: 50px;
-  color: violet;
 }
 
 .btnstory {
@@ -9,4 +8,14 @@
 
 .Fname {
   color: blue;
+}
+
+.stext {
+  margin-top: 20px;
+  width: 40rem;
+  height: 10rem;
+}
+
+.diStory {
+  border: 0.2rem solid rgb(162, 211, 140);
 }

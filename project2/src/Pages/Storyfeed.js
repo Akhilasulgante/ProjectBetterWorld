@@ -11,11 +11,11 @@ import "../Styling/Stories.css";
 const storyfeed = ({ story }) => {
   return (
     <div>
-      <div>
+      <div className="diStory">
         {story.map((story, i) => (
           <div key={"story" + i}>
             <label className="Fname" name="Fname">
-              Angel Name:{story.name}{" "}
+              Name:{story.name}{" "}
             </label>
             <div>
               <label>

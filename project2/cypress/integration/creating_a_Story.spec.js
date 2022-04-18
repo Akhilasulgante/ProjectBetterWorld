@@ -12,6 +12,6 @@ describe("Creating a Story", () => {
     cy.get(".btnstory button#strybtn").click();
   });
   it("Displaying with label", () => {
-    cy.get(".Fname").eq(0).should("have.text", "Angel Name:First name ");
+    cy.get(".Fname").eq(0).should("have.text", "Name:First name ");
   });
 });
