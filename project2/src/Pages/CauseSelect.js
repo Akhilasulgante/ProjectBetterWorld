@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Styling/CauseSelect.css";
 import causeData from "../Data/causeData";
 import Amtdonated from "./Amtdonated";
@@ -12,9 +12,13 @@ import DonatedAmount from "./DonatedAmount";
  */
 function CauseSelect(props) {
   const { btnId } = props;
-  const [Amount, setAmount] = useState([]);
+  const [Amount, setAmount] = useState(0);
   console.log("btnId", btnId);
   console.log(causeData[btnId].title);
+
+  useEffect(() => {
+    setAmount(causeData[btnId].donationAmt);
+  }, []);
 
   return (
     <div>
@@ -25,9 +29,9 @@ function CauseSelect(props) {
         <p>
           {causeData[btnId].Desc1} <br /> {causeData[btnId].Desc2}
         </p>
-        <Amtdonated Amount={Amount} btnId={btnId}></Amtdonated>
+        <Amtdonated amount={Amount} btnId={btnId}></Amtdonated>
       </div>
-      <DonatedAmount></DonatedAmount>
+      <DonatedAmount btnId={btnId} setAmount={setAmount}></DonatedAmount>
       <div>
         <img src={causeData[btnId].img} alt="Not loading" />
       </div>

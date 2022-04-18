@@ -13,7 +13,7 @@ import CreateStory from "./Model/CreateStory";
  * @return  object
  */
 function App() {
-  const [btnId, setBtnId] = useState("-1");
+  const [btnId, setBtnId] = useState("1");
   const story = new CreateStory();
 
   return (
